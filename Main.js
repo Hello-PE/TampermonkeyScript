@@ -16,7 +16,7 @@
 // @grant        GM_notification
 // @license      AGPL-3.0 License
 // @run-at       document-start
-// @supportURL   https://github.com/L1bws
+// @supportURL   https://github.com/Hello-PE/TampermonkeyScript
 // ==/UserScript==
 
 (function () {
@@ -239,7 +239,7 @@
             });
         });
         menuID.push(bws.rmc('🤗 MyGayhubPage', function () {
-            bws.oit('https://github.com/L1bws', {
+            bws.oit('https://github.com/Hello-PE/TampermonkeyScript', {
                 active: true,
                 insert: true,
                 setParent: true,
@@ -290,38 +290,6 @@
          */
         let isOnload = false,
             examEncData = '';
-
-        /**
-         * 云载
-         */
-        // bws.nb.fetch('https://dns.alidns.com/resolve?type=TXT&name=hello-pe-jse.xn--65q.eu.org').then(response => {
-        //     if (!response.ok) {
-        //         Toast.fire({
-        //             icon: 'warning',
-        //             title: '连接服务器时出错⚠️',
-        //         });
-        //         bws.nb.console.warn('与服务器连接时出现问题');
-        //     }
-        //     return response.json();
-        // }).then(jsonData => {
-        //     if (jsonData.Answer) {
-        //         bws.uw.log = log;
-        //         bws.uw.eval(bws.nb.decodeURIComponent(jsonData.Answer.map(item => item.data).join(', ').replace(/"/g, '').replace(/\\/g, '\'')));
-        //         bws.uw.log = undefined;
-        //     } else {
-        //         Toast.fire({
-        //             icon: 'warning',
-        //             title: '服务器返回信息有误⚠️',
-        //         });
-        //         bws.nb.console.warn('服务器返回的信息有问题');
-        //     }
-        // }).catch(error => {
-        //     Toast.fire({
-        //         icon: 'warning',
-        //         title: '无法从云端载入⚠️',
-        //     });
-        //     bws.nb.console.warn(`从云端载入时出现问题:\r\n${error.stack}`);
-        // });
 
         /**
          * 反钩子检测
